@@ -132,7 +132,8 @@ int main ()
        printf ("Escolha uma opção abaixo:\n\n");
        printf ("1-Registrar Nome do Aluno(a)\n");
        printf ("2-Consultar Nome do Aluno(a)\n");
-       printf ("3-Deletar Nome do Aluno(a)\n\n"); 
+       printf ("3-Deletar Nome do Aluno(a)\n"); 
+       printf ("4-Sair do Sistema\n\n");
        printf ("Opção: "); //fim do menu
 
        scanf("%d", &opcao); //armazenando a escolha do usuário
@@ -151,6 +152,11 @@ int main ()
        
          case 3:
          deletar();
+	     break;
+	     
+	     case 4:
+	     printf("Obrigado por Utilizar nosso Sistema!\n");
+	     return 0;
 	     break;
 	     
 	     default:
